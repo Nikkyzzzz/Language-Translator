@@ -145,3 +145,31 @@ const inputChars = document.querySelector("#input-chars");
 inputTextElem.addEventListener("input", (e) => {
   inputChars.innerHTML = inputTextElem.value.length;
 });
+
+// Function to speak out the translated text
+function speakTranslatedText() {
+    const translatedText = outputTextElem.value;
+    
+    // Creating an utterance object with the translated text
+    const utterance = new SpeechSynthesisUtterance(translatedText);
+    
+    // Configuring speech synthesis options if needed
+    // Example: utterance.lang = 'en-US'; // Set language to US English
+    
+    // Speaking out the translated text
+    window.speechSynthesis.speak(utterance);
+  }
+  
+  // Event listener for the "Speak" button
+  document.getElementById("speak-btn").addEventListener("click", speakTranslatedText);
+  function speakTranslatedText() {
+    const translatedText = outputTextElem.value;
+    
+    const utterance = new SpeechSynthesisUtterance(translatedText);
+    
+    // Set language to Hindi (India)
+    utterance.lang = 'hi-IN'; 
+    
+    window.speechSynthesis.speak(utterance);
+  }
+    
