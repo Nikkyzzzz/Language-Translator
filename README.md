@@ -57,6 +57,6 @@ This project is licensed under the MIT License. You are free to use, modify, and
 
 ## Credits
 
-Developed by [Nikita Patra].
+Developed by [Nikita Patra and Sarthak Gusain].
 
 Enjoy translating texts with ease!
